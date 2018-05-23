@@ -9,6 +9,7 @@ public class BuildingSpawnEditor : Editor {
 		DrawDefaultInspector();
 
 		BuildingSpawnController myScript = (BuildingSpawnController)target;
+
 		if (GUILayout.Button("Spawn a Building")) {
 			myScript.PositionBuildingInFrontOfPlayer(myScript.building.transform);
 			myScript.building.SetActive(true);

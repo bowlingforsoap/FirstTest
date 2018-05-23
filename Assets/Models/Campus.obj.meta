@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 38f2e2882c1cc91469afc65e041d7bf7
-timeCreated: 1526866683
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -887,6 +885,7 @@ ModelImporter:
     101758: Surface__[192055]
     101760: Surface__[192456]
     101762: university_bookshop2_university_bookshop_[334834]
+    101764: default
     400000: A1_A601_[230183]
     400002: C2.2_C2.01_[334429]
     400004: C4.1_C4.01_[332932]
@@ -1769,6 +1768,7 @@ ModelImporter:
     401758: Surface__[192055]
     401760: Surface__[192456]
     401762: university_bookshop2_university_bookshop_[334834]
+    401764: default
     2100000: A1_A601_[230183]Mat
     2100002: C2.2_C2.01_[334429]Mat
     2100004: C4.1_C4.01_[332932]Mat
@@ -2650,6 +2650,7 @@ ModelImporter:
     2101756: Surface__[192055]Mat
     2101758: Surface__[192456]Mat
     2101760: university_bookshop2_university_bookshop_[334834]Mat
+    2101762: defaultMat
     2300000: A1_A601_[230183]
     2300002: C2.2_C2.01_[334429]
     2300004: C4.1_C4.01_[332932]
@@ -3531,6 +3532,7 @@ ModelImporter:
     2301756: Surface__[192055]
     2301758: Surface__[192456]
     2301760: university_bookshop2_university_bookshop_[334834]
+    2301762: default
     3300000: A1_A601_[230183]
     3300002: C2.2_C2.01_[334429]
     3300004: C4.1_C4.01_[332932]
@@ -4412,6 +4414,7 @@ ModelImporter:
     3301756: Surface__[192055]
     3301758: Surface__[192456]
     3301760: university_bookshop2_university_bookshop_[334834]
+    3301762: default
     4300000: A1_A601_[230183]
     4300002: C2.2_C2.01_[334429]
     4300004: C4.1_C4.01_[332932]
@@ -5293,6 +5296,7 @@ ModelImporter:
     4301756: Surface__[192055]
     4301758: Surface__[192456]
     4301760: university_bookshop2_university_bookshop_[334834]
+    4301762: default
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -5312,6 +5316,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
