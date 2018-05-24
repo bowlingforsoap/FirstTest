@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LaserPointer : MonoBehaviour {
 	private SteamVR_TrackedObject trackedObj;
@@ -67,6 +68,10 @@ public class LaserPointer : MonoBehaviour {
 			{
 				Teleport();
 			}
+
+            // if (SceneManager.GetActiveScene().name.Equals("TestB_BuildingMovesOntoYou") && Input.GetButtonDown("Button.Three")) {
+            //     Debug.Log("X is pressed");
+            // }
 		} else {
 			PreventFurtherTeleport();
 		}
