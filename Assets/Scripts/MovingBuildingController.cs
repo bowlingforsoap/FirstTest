@@ -6,24 +6,31 @@ public class MovingBuildingController : MonoBehaviour {
 	public Transform playerTransform;
 	public Transform buildingTransform;
 	public float speed;
+	// Debug
+	public Transform headTransform;
 	
 	// Where we are moving to
 	private Vector3 targetPosition;
+	private Vector3 TargetPosition {
+		get {return targetPosition - DistanceCounter.differenceBetweenPivotAndOutterWall;}
+		set {targetPosition = value;}
+	}
 	private Vector3 buildingInitialPosition;
+
 	void Start() {
 		buildingInitialPosition = buildingTransform.position;
 	}
 
 	void Update() {
 		if (ThisGameManager.moveBuilding) {
-			MoveBuildingOntoPlayer(targetPosition, buildingTransform, speed);
+			MoveBuildingOntoPlayer(TargetPosition, buildingTransform, speed);
 		}
 	}
 
 	public void StartMovingBuilding() {
-		Debug.Log("targetPosition: " + playerTransform.position);
-		
-		targetPosition = playerTransform.position;
+		Vector3 playerPositionZeroY = playerTransform.position;
+		playerPositionZeroY.y = 0f;
+		TargetPosition = playerPositionZeroY;
 		ThisGameManager.moveBuilding = true;
 	}
 
@@ -35,12 +42,8 @@ public class MovingBuildingController : MonoBehaviour {
 		buildingTransform.position = buildingInitialPosition;
 	}
 
-	public static void MoveBuildingOntoPlayer(Vector3 playerPosition, Transform buildingTransform, float speed) {
+	private static void MoveBuildingOntoPlayer(Vector3 playerPosition, Transform buildingTransform, float speed) {
 		if (playerPosition == buildingTransform.position) {
-			Debug.Log("playerPosition: " + playerPosition);
-			Debug.Log("building.localPosition" + buildingTransform.localPosition);
-			Debug.Log("building.position" + buildingTransform.position);
-
 			ThisGameManager.moveBuilding = false;
 			return;
 		}
